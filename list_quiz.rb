@@ -44,17 +44,17 @@ puts
 
 
 def series_up(n)
-    list = []
+    answer = []
     i = 0
     n.times do
         k = 1
         while k <= i+1 && i <=n
-            list.push(k)
+            answer.push(k)
             k = k + 1
         end
         i = i + 1
     end
-    return list
+    return answer
 end
 
 print series_up(1)  
